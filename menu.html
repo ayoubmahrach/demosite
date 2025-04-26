@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - BURGUR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <h1>BURGUR</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html" class="active">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="basket-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="basket-count">0</span>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header menu-page-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Menu</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="new-menu-section">
+        <div class="container">
+            <div class="section-title center">
+                <span class="subtitle">Delicious Options</span>
+                <h2>EXPLORE OUR MENU</h2>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="burgers">Burgers</button>
+                <button class="category-btn" data-category="sides">Sides</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Burgers -->
+                <div class="menu-card" data-type="burgers">
+                    <div class="popular-tag">Bestseller</div>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop&q=80" alt="Classic Burger">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Classic Burger</h3>
+                        <div class="menu-card-desc">Juicy beef patty with fresh lettuce, tomato, onion, and our special sauce</div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">$12.99</div>
+                            <button class="menu-card-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Add to Order</span>
+                            </button>
+                        </div>
+                        <div class="menu-card-meta">
+                            <span class="menu-card-calories"><i class="fas fa-fire-alt"></i> 650 cal</span>
+                            <span class="menu-card-time"><i class="far fa-clock"></i> 15 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-type="burgers">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=800&h=600&fit=crop&q=80" alt="Cheese Burger">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Cheese Burger</h3>
+                        <div class="menu-card-desc">Our classic burger topped with melted cheddar cheese and crispy bacon</div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">$13.99</div>
+                            <button class="menu-card-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Add to Order</span>
+                            </button>
+                        </div>
+                        <div class="menu-card-meta">
+                            <span class="menu-card-calories"><i class="fas fa-fire-alt"></i> 780 cal</span>
+                            <span class="menu-card-time"><i class="far fa-clock"></i> 15 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-type="burgers">
+                    <div class="popular-tag">Chef's Choice</div>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=800&h=600&fit=crop&q=80" alt="Special Burger">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Special Burger</h3>
+                        <div class="menu-card-desc">Double patty with caramelized onions, mushrooms, and blue cheese</div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">$15.99</div>
+                            <button class="menu-card-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Add to Order</span>
+                            </button>
+                        </div>
+                        <div class="menu-card-meta">
+                            <span class="menu-card-calories"><i class="fas fa-fire-alt"></i> 950 cal</span>
+                            <span class="menu-card-time"><i class="far fa-clock"></i> 20 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-type="burgers">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800&h=600&fit=crop&q=80" alt="Deluxe Burger">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Deluxe Burger</h3>
+                        <div class="menu-card-desc">Premium Angus beef with avocado, crispy onions, and truffle aioli</div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">$17.99</div>
+                            <button class="menu-card-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Add to Order</span>
+                            </button>
+                        </div>
+                        <div class="menu-card-meta">
+                            <span class="menu-card-calories"><i class="fas fa-fire-alt"></i> 870 cal</span>
+                            <span class="menu-card-time"><i class="far fa-clock"></i> 20 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sides -->
+                <div class="menu-card" data-type="sides">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&h=600&fit=crop&q=80" alt="Crispy Onion Rings">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Crispy Onion Rings</h3>
+                        <div class="menu-card-desc">Golden-fried onion rings served with our signature dipping sauce</div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">$6.99</div>
+                            <button class="menu-card-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Add to Order</span>
+                            </button>
+                        </div>
+                        <div class="menu-card-meta">
+                            <span class="menu-card-calories"><i class="fas fa-fire-alt"></i> 420 cal</span>
+                            <span class="menu-card-time"><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-type="sides">
+                    <div class="popular-tag">Popular</div>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?w=800&h=600&fit=crop&q=80" alt="Loaded Fries">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Loaded Fries</h3>
+                        <div class="menu-card-desc">Crispy fries topped with cheese, bacon, and green onions</div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">$7.99</div>
+                            <button class="menu-card-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Add to Order</span>
+                            </button>
+                        </div>
+                        <div class="menu-card-meta">
+                            <span class="menu-card-calories"><i class="fas fa-fire-alt"></i> 580 cal</span>
+                            <span class="menu-card-time"><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-card" data-type="drinks">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1543253687-c931c8e01820?w=800&h=600&fit=crop&q=80" alt="Chocolate Milkshake">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Chocolate Milkshake</h3>
+                        <div class="menu-card-desc">Rich and creamy chocolate milkshake topped with whipped cream</div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">$5.99</div>
+                            <button class="menu-card-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Add to Order</span>
+                            </button>
+                        </div>
+                        <div class="menu-card-meta">
+                            <span class="menu-card-calories"><i class="fas fa-fire-alt"></i> 520 cal</span>
+                            <span class="menu-card-time"><i class="far fa-clock"></i> 5 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-type="drinks">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=800&h=600&fit=crop&q=80" alt="Soft Drinks">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Soft Drinks</h3>
+                        <div class="menu-card-desc">Choice of Coke, Sprite, Fanta, or Diet Coke</div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">$2.99</div>
+                            <button class="menu-card-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Add to Order</span>
+                            </button>
+                        </div>
+                        <div class="menu-card-meta">
+                            <span class="menu-card-calories"><i class="fas fa-fire-alt"></i> 150 cal</span>
+                            <span class="menu-card-time"><i class="far fa-clock"></i> 1 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-card" data-type="desserts">
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&h=600&fit=crop&q=80" alt="Ice Cream Sundae">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Ice Cream Sundae</h3>
+                        <div class="menu-card-desc">Vanilla ice cream with hot fudge, nuts, and a cherry on top</div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">$6.99</div>
+                            <button class="menu-card-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Add to Order</span>
+                            </button>
+                        </div>
+                        <div class="menu-card-meta">
+                            <span class="menu-card-calories"><i class="fas fa-fire-alt"></i> 450 cal</span>
+                            <span class="menu-card-time"><i class="far fa-clock"></i> 5 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-type="desserts">
+                    <div class="popular-tag">New</div>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=800&h=600&fit=crop&q=80" alt="Cheesecake">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">New York Cheesecake</h3>
+                        <div class="menu-card-desc">Creamy cheesecake with graham cracker crust and berry compote</div>
+                        <div class="menu-card-footer">
+                            <div class="menu-card-price">$7.99</div>
+                            <button class="menu-card-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>Add to Order</span>
+                            </button>
+                        </div>
+                        <div class="menu-card-meta">
+                            <span class="menu-card-calories"><i class="fas fa-fire-alt"></i> 390 cal</span>
+                            <span class="menu-card-time"><i class="far fa-clock"></i> 5 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-banner">
+        <div class="container">
+            <div class="order-banner-content">
+                <h2>Ready to Order?</h2>
+                <p>Call us or order online with free delivery for orders over $30</p>
+                <div class="order-cta">
+                    <a href="#" class="order-btn primary"><i class="fas fa-shopping-bag"></i> Order Online</a>
+                    <a href="tel:+212679346099" class="order-btn secondary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>BURGUR</h3>
+                    <p>Premium burgers made with the finest ingredients.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/212679346099"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Burger Street, Food City</p>
+                    <p><i class="fas fa-phone"></i> +212679346099</p>
+                    <p><i class="fas fa-envelope"></i> info@burgur.com</p>
+                    <p><i class="fas fa-clock"></i> Open 10:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 BURGUR. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
